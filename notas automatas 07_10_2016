@@ -3,4 +3,23 @@
 -se usa para definir las expresiones validas en un lenguaje de programaciòn
 -Nosotros lo usaremos para definir las expresiones regulares de nuestro lenguaje (+-/*.  etc)
 
+digito = [0-9]
+Entero = digito+
+
+
+
 exp = expresiòn aritmetica
+exp -> exp op exp   |  (exp)  | ENTERO
+op -> + | - | * | /
+
+
+Ejemplo...
+
+(2+4)*5
+
+
+exp => exp op exp    [exp-> exp op exp]
+exp => exp op ENTERO    [exp-> ENTERO]
+exp => exp * ENTERO    [op-> *]
+exp => (exp) * ENTERO  [exp-> (exp)]
+
