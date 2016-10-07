@@ -1,0 +1,6 @@
+***Gràmaticas libres de contexto
+-Por definiciòn son recursivas
+-se usa para definir las expresiones validas en un lenguaje de programaciòn
+-Nosotros lo usaremos para definir las expresiones regulares de nuestro lenguaje (+-/*.  etc)
+
+exp = expresiòn aritmetica
