@@ -31,3 +31,24 @@ Para este ejemplo se hizo la derivación por la derecha
 
 
 
+Ejemplo 2...
+
+(7*2)-(8*4)
+
+
+exp => exp op exp                             [exp-> exp op exp]
+exp => (exp) op exp                           [exp-> (exp)]
+exp => (exp op exp) op exp                    [exp-> exp op exp]
+exp => (ENTERO op exp) op exp                 [exp-> ENTERO]
+exp => (ENTERO * exp) op exp                  [op-> *]
+exp => (ENTERO * ENTERO) op exp               [exp-> ENTERO]
+exp => (ENTERO * ENTERO) - exp                [op-> -]
+exp => (ENTERO * ENTERO) - (exp)              [exp-> (exp)]
+exp => (ENTERO * ENTERO) - (exp op exp)       [exp-> exp op exp]
+exp => (ENTERO * ENTERO) - (ENTERO op exp)    [exp-> ENTERO]
+exp => (ENTERO * ENTERO) - (ENTERO * exp)     [op-> *]
+exp => (ENTERO * ENTERO) - (ENTERO * ENTERO)  [exp-> ENTERO]
+
+
+
+
