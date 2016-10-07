@@ -18,8 +18,16 @@ Ejemplo...
 (2+4)*5
 
 
-exp => exp op exp    [exp-> exp op exp]
-exp => exp op ENTERO    [exp-> ENTERO]
-exp => exp * ENTERO    [op-> *]
-exp => (exp) * ENTERO  [exp-> (exp)]
+exp => exp op exp                   [exp-> exp op exp]
+exp => exp op ENTERO                [exp-> ENTERO]
+exp => exp * ENTERO                 [op-> *]
+exp => (exp) * ENTERO               [exp-> (exp)]
+exp => (exp op exp) * ENTERO        [exp-> exp op exp]
+exp => (exp op ENTERO) * ENTERO     [exp-> ENTERO]
+exp => (exp + ENTERO) * ENTERO      [op-> +]
+exp => (ENTERO + ENTERO) * ENTERO   [exp-> ENTERO]
+
+Para este ejemplo se hizo la derivación por la derecha
+
+
 
