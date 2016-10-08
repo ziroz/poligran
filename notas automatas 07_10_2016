@@ -50,5 +50,31 @@ exp => (ENTERO * ENTERO) - (ENTERO * exp)     [op-> *]
 exp => (ENTERO * ENTERO) - (ENTERO * ENTERO)  [exp-> ENTERO]
 
 
+Para este ejemplo se hizo la derivación por la izquierda
+
+
+
+Ejemplo 3...
+ 
+E -> (E) | a
+
+(aaaa)
+
+E => (E)    [E -> (E)]o
+E => (a)  [E -> a]  ***No aplica la regla
+
+
+(a)aaa
+
+E => (E)   [E -> (E)]
+E => (a)  [E -> a]  ***No aplica la regla
+
+
+
+
+
+
+
+
 
 
