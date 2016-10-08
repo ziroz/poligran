@@ -57,6 +57,7 @@ Para este ejemplo se hizo la derivación por la izquierda
 Ejemplo 3...
  
 E -> (E) | a
+++Para esta regla la cumplen si solo se tiene una 'a' en cualquier cantidad de parentesis balanceados
 
 (aaaa)
 
@@ -68,6 +69,20 @@ E => (a)  [E -> a]  ***No aplica la regla
 
 E => (E)   [E -> (E)]
 E => (a)  [E -> a]  ***No aplica la regla
+
+
+(a)
+
+E => (E)  [E -> (E)]
+E => (a)  [E -> a]
+
+
+(a)(a)(a)
+
+**No aplica la regla
+
+((((((a)))))
+
 
 
 
